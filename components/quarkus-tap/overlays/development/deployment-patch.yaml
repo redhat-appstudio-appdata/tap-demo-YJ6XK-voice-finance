@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: quarkus-tap
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/ezhang-tenant/tap-demo/quarkus-tap@sha256:d290bf5536a7862c3a28ea36a80550f8f42166ad65bf9c91b3157016b795ac31
+        name: my-java-quarkus
+        resources: {}
+status: {}
